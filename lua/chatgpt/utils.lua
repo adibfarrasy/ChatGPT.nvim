@@ -113,7 +113,7 @@ function M.get_visual_lines(bufnr)
   end_col = math.min(end_col, #lines[#lines] - 1) + 1
 
   -- shorten first/last line according to start_col/end_col
-  lines[#lines] = lines[#lines]:sub(1, end_col)
+  -- lines[#lines] = lines[#lines]:sub(1, end_col)
   lines[1] = lines[1]:sub(start_col)
 
   return lines, start_row, start_col, end_row, end_col
