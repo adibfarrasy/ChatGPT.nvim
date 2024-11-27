@@ -32,7 +32,7 @@
   "translate": {
     "type": "chat",
     "opts": {
-      "template": "Translate this into {{lang}}:\n\n{{input}}. Don't replace or remove words already in {{lang}}.",
+      "template": "Translate this into {{lang}}, but don't replace or remove words already in {{lang}}:\n\n{{input}}",
       "strategy": "replace",
       "params": {
         "model": "gpt-3.5-turbo",
